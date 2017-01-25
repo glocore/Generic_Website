@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <title>Generic Page</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link href='https://fonts.googleapis.com/css?family=Pacifico|Archivo+Narrow|Open+Sans+Condensed:300|Titillium+Web' rel='stylesheet' type='text/css'>
+
+  <style>
+  /* Carousel Styling */
+  .slide1{
+    background-image: url('slider1.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    box-shadow: inset 0 -8px 8px 0 rgba(0, 0, 0, 0.2), inset 0 -10px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .slide2{
+    background-image: url('slider2.png');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    box-shadow: inset 0 -8px 8px 0 rgba(0, 0, 0, 0.2), inset 0 -10px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .slide3{
+    background-image: url('slider3.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    box-shadow: inset 0 -8px 8px 0 rgba(0, 0, 0, 0.2), inset 0 -10px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .carousel-caption h1{
+    font-size: 5.4em;
+    font-family: 'Pacifico', cursive;
+    padding-bottom: .4em;
+  }
+  .carousel-caption p{
+    font-size: 2em;
+    font-family: 'Archivo Narrow', arial;
+  }
+  .navbar-brand {
+  height: 80px;
+  }
+  .nav >li >a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  }
+  .navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+  }
+  .mainContent{
+    margin-top: 50px;
+  }
+  .mainContent p{
+    font-family: 'Archivo Narrow', arial, sans-serif;
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-align: justify;
+  }
+  .mainContent h1{
+    font-family: 'Titillium Web', arial, sans-serif;
+    font-size: 3.5em;
+  }
+  a.thumbnail:link,
+  a.thumbnail:visited,
+  a.thumbnail:hover,
+  a.thumbnail:active
+  {
+    text-decoration: none;
+  }
+  .caption p {
+    font-family: 'Titillium Web', arial, sans-serif;
+    font-size: 1.2em;
+    text-align: left;
+  }
+  .sideFeed{
+    margin-top: 100px;
+  }
+  a.sideFeedLink{
+    padding-top: 80px;
+  }
+  a.sideFeedLink:link,
+  a.sideFeedLink:visited{
+    //margin-top: 80px;
+    text-decoration: none;
+    color: black;
+  }
+  a.sideFeedLink:hover{
+    color: #00aced;
+  }
+  a.sideFeedLink:active{
+    text-decoration: none;
+    color: black;
+  }
+
+  img.media-object{
+    max-width: 100px;
+  }
+  div.media-body{
+    padding-left: 10px;
+  }
+  .socialMediaLinks{
+    margin-bottom: 40px;
+  }
+  .socialMediaLinks h1{
+    color: black;
+    text-align: center;
+    font-family: 'Archivo Narrow', arial, sans-serif;
+  }
+  .socialMediaLinks span{
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+  }
+  hr.secondToLastHr {
+    border:none;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 20px 20px -20px #333;
+  }
+  hr.lastHr {
+    border:none;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 -20px 20px -20px #333;
+  }
+  </style>
+</head>
+<body>
+  <div class="container" >
+<nav class="navbar navbar-fixed-top" style="background-color: #f1f1f1;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo"></a>
+      <!--
+      <a class="pull-left" href="#"><img src="logo.png" style="padding:10px"></a>
+    -->
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Contact Us <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Phone</a></li>
+            <li><a href="#">Social</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- navbar-left will move the search to the left -->
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+<br>
+
+  <div id="theCarousel" class="carousel slide" data-ride="carousel" style="padding:0;">
+
+
+    <ol class="carousel-indicators">
+      <li data-target="#theCarousel" data-slide-to="0" class="active"> </li >
+        <li data-target="#theCarousel" data-slide-to="1"> </li>
+        <li data-target ="#theCarousel" data-slide-to="2"> </li>
+      </ol >
+
+      <div class="carousel-inner">
+        <div class="item active" >
+          <div class ="slide1"></div>
+          <div class="carousel-caption">
+            <h1>Amazing Spaces</h1>
+            <p>Thousands layouts to choose from</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="slide2"></div>
+          <div class="carousel-caption">
+            <h1>Thousands of Colors</h1>
+            <p>Every Color you can Imagine!</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="slide3"></div>
+          <div class="carousel-caption">
+            <h1>Amazing Designs</h1>
+            <p>Choose from our wide variety of interior designs!</p>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#theCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"> </span>
+      </a>
+      <a class="right carousel-control" href="#theCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="mainContent col-lg-8 col-md-8 col-sm-8 col-xs-12">
+
+          <h1>We pride ourselves on our designs.</h1>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+          <div class="row" style="margin-top:40px;">
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <a target="_blank" href="gallery1.jpg" class="thumbnail">
+                <img src="gallery1.jpg" alt="...">
+                <div class="caption">
+                  <h3>Bold Designs</h3>
+                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <a target="_blank" href="gallery2.jpg" class="thumbnail">
+                <img src="gallery2.jpg" alt="...">
+                <div class="caption">
+                  <h3>Work in Style</h3>
+                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <a target="_blank" href="gallery3.jpg" class="thumbnail">
+                <img src="gallery3.jpg" alt="...">
+                <div class="caption">
+                  <h3>Cozy Chats</h3>
+                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <a target="_blank" href="gallery4.jpg" class="thumbnail">
+                <img src="gallery4.jpg" alt="...">
+                <div class="caption">
+                  <h3>Not afraid of Color</h3>
+                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </a>
+            </div>
+
+          </div><!-- gallery row-->
+
+      </div><!--mainContent-->
+
+      <div class="sideFeed col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+        <a href="#" class="sideFeedLink">
+          <div class="media">
+
+            <div class="media-left media-middle">
+
+              <img class="media-object" src="gallery1.jpg" alt="...">
+
+            </div>
+
+            <div class="media-body">
+
+              <h3 class="media-heading">Trending design Ideas</h3>
+              <p class="text-muted"><i>1/1/2017</i></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            </div>
+
+          </div>
+        </a>
+
+        <hr>
+
+        <a href="#" class="sideFeedLink">
+
+        <div class="media">
+
+          <div class="media-left media-middle">
+
+            <img class="media-object" src="gallery2.jpg" alt="...">
+
+          </div>
+
+          <div class="media-body">
+
+            <h3 class="media-heading">Liven up your Office</h3>
+            <p class="text-muted"><i>2/1/2017</i></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+          </div>
+
+        </div>
+
+      </a>
+
+      <hr>
+
+      <a href="#" class="sideFeedLink">
+
+        <div class="media">
+
+          <div class="media-left media-middle">
+
+            <img class="media-object" src="gallery3.jpg" alt="...">
+
+          </div>
+
+          <div class="media-body">
+
+            <h3 class="media-heading">Top Celebrity Designers</h3>
+            <p class="text-muted"><i>3/1/2017</i></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+          </div>
+
+        </div>
+
+      </a>
+
+      <hr>
+
+      <a href="#" class="sideFeedLink">
+
+        <div class="media">
+
+          <div class="media-left media-middle">
+
+            <img class="media-object" src="gallery4.jpg" alt="...">
+
+          </div>
+
+          <div class="media-body">
+
+            <h3 class="media-heading">Top Design Mistakes</h3>
+            <p class="text-muted"><i>4/1/2017</i></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+          </div>
+
+        </div>
+
+      </a>
+
+      <hr>
+
+      <a href="#" class="sideFeedLink">
+
+        <div class="media">
+
+          <div class="media-left media-middle">
+
+            <img class="media-object" src="gallery1.jpg" alt="...">
+
+          </div>
+
+          <div class="media-body">
+
+            <h3 class="media-heading">Recycling Old Stuff</h3>
+            <p class="text-muted"><i>5/1/2017</i></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+          </div>
+
+        </div>
+
+      </a>
+
+      </div>
+
+    </div> <!--mainContent row-->
+
+  </div><!-- mainContent container-->
+
+  <hr class="secondToLastHr">
+
+  <div class="container socialMediaLinks">
+
+    <h1>Ge<span>t in Tou</span>ch</h1>
+
+    <div class="row" style="margin-top: 50px">
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding: 0px 30px; border-right: 1px solid #999">
+
+        <br>
+
+        <form>
+
+          <div class="form-group">
+
+            <input class="form-control" id="email" placeholder="Your Name">
+
+          </div>
+
+          <div class="form-group">
+
+            <textarea class="form-control" rows="5" id="Message" placeholder="Your Message"></textarea>
+
+          </div>
+
+          <button type="submit" class="btn btn-default">Submit</button>
+
+        </form>
+
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding: 0px 30px; border-right: 1px solid #999">
+
+        <br>
+
+        <h3><i class="glyphicon glyphicon-envelope"></i> support@generic.com</h3>
+        <h3><i class="glyphicon glyphicon-earphone"></i> 312-999-123</h3>
+        <br><br>
+        <div class="hidden-lg hidden-md btn-group">
+
+          <button type="button" class="btn btn-default">Facebook</button>
+          <button type="button" class="btn btn-default">Twitter</button>
+          <button type="button" class="btn btn-default">Google+</button>
+
+        </div>
+        <br><br>
+
+      </div>
+
+      <div class="col-lg-4 col-md-4 hidden-sm hidden-xs" style="padding: 0px 30px;">
+
+        <br>
+
+        <div style="text-align: center;"><button type="button" class="btn btn-default">Facebook</button></div><br><br>
+        <div style="text-align: center;"><button type="button" class="btn btn-default">Twitter</button></div><br><br>
+        <div style="text-align: center;"><button type="button" class="btn btn-default">Google+</button></div><br><br>
+
+      </div>
+
+    </div><!--row-->
+
+  </div><!--socialMediaLinks-->
+
+  <hr class="lastHr">
+
+  <div style="text-align: center; padding-bottom: 20px;">&copy 2017 generic.com. All Rights Reserved.</div>
+
+  <div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>    <script src="js/bootstrap.min.js"></script>
+  </body>
+  </html>
